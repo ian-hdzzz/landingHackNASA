@@ -71,7 +71,7 @@ const SplineAnimation = () => {
               {/* Stats */}
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6 pt-12 animate-fade-in">
             <div className="p-6 rounded-lg bg-card/30 backdrop-blur-sm border border-border">
-              <div className="text-3xl font-bold text-primary">+40%</div>
+              <div className="text-3xl font-bold text-primary">98.6%</div>
               <div className="text-sm text-muted-foreground mt-1">{t('hero.stats.efficiency')}</div>
             </div>
             <div className="p-6 rounded-lg bg-card/30 backdrop-blur-sm border border-border">

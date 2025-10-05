@@ -13,7 +13,7 @@ const resources = {
         "cta1": "View Application",
         "cta2": "Learn More",
         "stats": {
-          "efficiency": "Irrigation Efficiency",
+          "efficiency": "Anual data accuracy",
           "monitoring": "Global Monitoring",
           "prediction": "Prediction", 
           "droughtPrediction": "Droughts and climate change"
@@ -397,7 +397,7 @@ const resources = {
         "cta1": "Ver la Aplicación",
         "cta2": "Conocer Más",
         "stats": {
-          "efficiency": "Eficiencia en Riego",
+          "efficiency": "Precisión de datos anual",
           "monitoring": "Monitoreo Global", 
           "prediction": "Predicción",
           "droughtPrediction": "Sequias y cambio climático"
