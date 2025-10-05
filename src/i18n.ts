@@ -142,6 +142,37 @@ const resources = {
       "language": {
         "spanish": "Español",
         "english": "English"
+      },
+      "plantsGallery": {
+        "badge": "Galería de Especies",
+        "title": "Descubre Nuestras",
+        "titleHighlight": "33 Especies",
+        "subtitle": "Explora la diversidad de plantas que monitorea nuestra plataforma de inteligencia artificial",
+        "family": "Familia:",
+        "funFact": "Dato curioso:",
+        "plants": {
+          "rosa": {
+            "name": "Rosa",
+            "scientificName": "Rosa spp.",
+            "family": "Rosaceae",
+            "description": "Las rosas son símbolos universales de belleza y amor, con más de 300 especies conocidas.",
+            "funFact": "Las rosas pueden vivir más de 100 años."
+          },
+          "lavanda": {
+            "name": "Lavanda",
+            "scientificName": "Lavandula angustifolia",
+            "family": "Lamiaceae",
+            "description": "Planta aromática conocida por sus propiedades relajantes y su distintivo aroma.",
+            "funFact": "La lavanda se utiliza en aromaterapia por sus propiedades relajantes."
+          },
+          "girasol": {
+            "name": "Girasol",
+            "scientificName": "Helianthus annuus",
+            "family": "Asteraceae",
+            "description": "Planta icónica que sigue al sol durante el día, símbolo de lealtad y devoción.",
+            "funFact": "Los girasoles siguen la luz del sol durante el día."
+          }
+        }
       }
     }
   },
@@ -284,6 +315,37 @@ const resources = {
       "language": {
         "spanish": "Español",
         "english": "English"
+      },
+      "plantsGallery": {
+        "badge": "Species Gallery",
+        "title": "Discover Our",
+        "titleHighlight": "33 Species",
+        "subtitle": "Explore the diversity of plants monitored by our artificial intelligence platform",
+        "family": "Family:",
+        "funFact": "Fun fact:",
+        "plants": {
+          "rosa": {
+            "name": "Rose",
+            "scientificName": "Rosa spp.",
+            "family": "Rosaceae",
+            "description": "Roses are universal symbols of beauty and love, with more than 300 known species.",
+            "funFact": "Roses can live for more than 100 years."
+          },
+          "lavanda": {
+            "name": "Lavender",
+            "scientificName": "Lavandula angustifolia",
+            "family": "Lamiaceae",
+            "description": "Aromatic plant known for its relaxing properties and distinctive aroma.",
+            "funFact": "Lavender is used in aromatherapy for its relaxing properties."
+          },
+          "girasol": {
+            "name": "Sunflower",
+            "scientificName": "Helianthus annuus",
+            "family": "Asteraceae",
+            "description": "Iconic plant that follows the sun during the day, symbol of loyalty and devotion.",
+            "funFact": "Sunflowers follow sunlight during the day."
+          }
+        }
       }
     }
   }

@@ -7,16 +7,16 @@ import LanguageToggle from './LanguageToggle';
 const SplineAnimation = () => {
   const { t } = useTranslation();
   return (
-    <section className="py-16 bg-gradient-to-b from-background mx-20">
-      <div className="container mx-auto px-6 lg:px-4">
-        <div className="max-w-7xl mx-auto">
+    <section className="py-16 bg-gradient-to-b from-background">
+      <div className="container mx-auto px-4 lg:px-8 xl:px-12">
+        <div className="max-w-full mx-auto">
           {/* Language Toggle */}
           <div className="flex justify-center md:justify-end mb-6">
             <LanguageToggle />
           </div>
-          <div className="grid grid-cols-1 lg:grid-cols-10 gap-8 items-center justify-center">
-            {/* Left Column - Text Content with pointer events (70% width) */}
-            <div className="col-span-full lg:col-span-6 space-y-8 text-center lg:text-left pointer-events-auto flex flex-col justify-center">
+          <div className="grid grid-cols-1 lg:grid-cols-12 xl:grid-cols-10 gap-8 items-center justify-center">
+            {/* Left Column - Text Content with pointer events */}
+            <div className="col-span-full lg:col-span-7 xl:col-span-6 space-y-8 text-center lg:text-left pointer-events-auto flex flex-col justify-center">
               {/* Enhanced Badge */}
               <div className="lg:w-80 inline-flex items-center justify-center gap-3 lg:gap-2 px-6 lg:px-1 py-3 lg:py-2 rounded-full bg-background/70 backdrop-blur-md border border-primary/30 animate-fade-in shadow-2xl mx-auto lg:mx-0">
                 <Satellite className="w-5 h-5 lg:w-4 lg:h-4 text-primary animate-pulse" />
@@ -73,9 +73,9 @@ const SplineAnimation = () => {
           </div>
             </div>
             
-            {/* Right Column - Animation (30% width) */}
-            <div className="hidden lg:block lg:col-span-4 mr-0">
-              <div className="border-none relative h-[500px] md:h-[600px] rounded-lg overflow-hidden bg-transparent">
+            {/* Right Column - Animation */}
+            <div className="hidden lg:block lg:col-span-5 xl:col-span-4 mr-0">
+              <div className="border-none relative h-[500px] md:h-[600px] xl:h-[700px] rounded-lg overflow-hidden bg-transparent">
                 <Spline
                   scene="https://prod.spline.design/sCOwXCDfSb9mScQm/scene.splinecode"
                   style={{

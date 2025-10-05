@@ -35,30 +35,30 @@ const Impact = () => {
     },
   ];
   return (
-    <section className="py-24 relative">
-      <div className="container mx-auto px-4">
-        <div className="text-center max-w-3xl mx-auto mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold mb-4">
+    <section className="py-16 md:py-20 lg:py-24 relative">
+      <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="text-center max-w-4xl mx-auto mb-12 md:mb-16">
+          <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold mb-4 md:mb-6">
            {t('impact.title')}{" "}
             <span className="bg-gradient-to-r from-primary via-[hsl(var(--earth-teal))] to-primary bg-clip-text text-transparent">
               {t('impact.titleHighlight')}
             </span>
           </h2>
-          <p className="text-xl text-muted-foreground">
+          <p className="text-lg sm:text-xl text-muted-foreground px-4 sm:px-0">
             {t('impact.subtitle')}
           </p>
         </div>
 
-        <div className="grid md:grid-cols-2 gap-8 mx-20">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 md:gap-8 lg:gap-12 max-w-7xl mx-auto">
           {impacts.map((impact, index) => {
             const Icon = impact.icon;
             return (
               <div 
                 key={index}
-                className="group relative overflow-hidden rounded-2xl bg-card border border-border hover:border-primary/50 transition-all duration-500 hover:scale-105"
+                className="group relative overflow-hidden rounded-xl sm:rounded-2xl bg-card border border-border hover:border-primary/50 transition-all duration-500 hover:scale-[1.02] lg:hover:scale-105"
               >
                 {/* Image Background */}
-                <div className="absolute inset-0 opacity-20 group-hover:opacity-30 transition-opacity">
+                <div className="absolute inset-0 opacity-15 sm:opacity-20 group-hover:opacity-25 sm:group-hover:opacity-30 transition-opacity">
                   <img 
                     src={impact.image} 
                     alt={impact.title}
@@ -68,28 +68,28 @@ const Impact = () => {
                 </div>
 
                 {/* Content */}
-                <div className="relative p-8 space-y-6">
-                  <div className={`w-14 h-14 rounded-xl bg-${impact.color}/20 border border-${impact.color}/30 flex items-center justify-center`}>
-                    <Icon className={`w-7 h-7 text-${impact.color}`} />
+                <div className="relative p-4 sm:p-6 lg:p-8 space-y-4 sm:space-y-6">
+                  <div className={`w-12 h-12 sm:w-14 sm:h-14 rounded-lg sm:rounded-xl bg-${impact.color}/20 border border-${impact.color}/30 flex items-center justify-center`}>
+                    <Icon className={`w-6 h-6 sm:w-7 sm:h-7 text-${impact.color}`} />
                   </div>
 
                   <div>
-                    <h3 className="text-2xl font-bold mb-2">{impact.title}</h3>
-                    <p className="text-muted-foreground">{impact.description}</p>
+                    <h3 className="text-xl sm:text-2xl font-bold mb-2 sm:mb-3">{impact.title}</h3>
+                    <p className="text-sm sm:text-base text-muted-foreground leading-relaxed">{impact.description}</p>
                   </div>
 
-                  <ul className="space-y-3">
+                  <ul className="space-y-2 sm:space-y-3">
                     {impact.benefits.map((benefit, i) => (
-                      <li key={i} className="flex gap-2 text-sm">
-                        <span className="text-primary mt-0.5">✓</span>
-                        <span>{benefit}</span>
+                      <li key={i} className="flex gap-2 sm:gap-3 text-xs sm:text-sm">
+                        <span className="text-primary mt-0.5 flex-shrink-0">✓</span>
+                        <span className="leading-relaxed">{benefit}</span>
                       </li>
                     ))}
                   </ul>
                 </div>
 
                 {/* Glow Effect */}
-                <div className={`absolute -bottom-20 -right-20 w-40 h-40 bg-${impact.color}/20 rounded-full blur-3xl group-hover:bg-${impact.color}/30 transition-all`}></div>
+                <div className={`absolute -bottom-16 -right-16 sm:-bottom-20 sm:-right-20 w-32 h-32 sm:w-40 sm:h-40 bg-${impact.color}/20 rounded-full blur-2xl sm:blur-3xl group-hover:bg-${impact.color}/30 transition-all`}></div>
               </div>
             );
           })}
