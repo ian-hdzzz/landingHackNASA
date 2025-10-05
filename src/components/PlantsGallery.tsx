@@ -87,17 +87,17 @@ const PlantsGallery = () => {
 
   return (
     <section id="plants-gallery" className="h-screen relative overflow-hidden bg-gradient-to-b from-card/30 to-background flex flex-col">
-                  {/* Language Toggle */}
-          <div className="absolute top-5 right-4 sm:right-8 lg:right-12">
-            <LanguageToggle />
-          </div>
       {/* Animated Background */}
       <div className="absolute inset-0">
         <div className={`absolute inset-0 bg-gradient-to-br ${colors.gradient} opacity-30 animate-pulse`}></div>
         <div className="absolute inset-0 bg-[radial-gradient(circle_at_50%_50%,hsl(var(--primary))_0%,transparent_50%)] opacity-5"></div>
       </div>
+        {/* Language Toggle */}
 
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10 flex flex-col h-full">
+          <div className="absolute top-5 right-4 sm:right-8 lg:right-12">
+            <LanguageToggle />
+          </div>
         {/* Header */}
         <div className="text-center max-w-4xl mx-auto py-2 md:py-6 pb-0 relative">
           
