@@ -13,14 +13,14 @@ const PlantsGallery = () => {
     { id: 1, nameKey: "astragalus", image: "/images/astragalus.png", color: "purple" },
     { id: 2, nameKey: "cardamine", image: "/images/cardamine.png", color: "rose" },
     { id: 3, nameKey: "cerastium", image: "/images/cerastium.png", color: "green" },
-    { id: 4, nameKey: "chrysanthemum", image: "/images/chrysanthemum.png", color: "yellow" },
+    { id: 4, nameKey: "chrysanthemum", image: "/images/Chrysanthemum.png", color: "yellow" },
     { id: 5, nameKey: "crotalaria", image: "/images/crotalaria.png", color: "green" },
     { id: 6, nameKey: "delphinium", image: "/images/delphinium.png", color: "blue" },
     { id: 7, nameKey: "draba", image: "/images/draba.png", color: "yellow" },
-    { id: 8, nameKey: "erigeron", image: "/images/erigeron.png", color: "purple" },
+    { id: 8, nameKey: "erigeron", image: "/images/Erigeron.png", color: "purple" },
     { id: 9, nameKey: "euphorbia", image: "/images/euphorbia.png", color: "rose" },
-    { id: 10, nameKey: "helichrysum", image: "/images/helichrysum.png", color: "orange" },
-    { id: 11, nameKey: "hieracium", image: "/images/hieracium.png", color: "orange" },
+    { id: 10, nameKey: "helichrysum", image: "/images/Helichrysum.png", color: "orange" },
+    { id: 11, nameKey: "hieracium", image: "/images/Hieracium.png", color: "orange" },
     { id: 12, nameKey: "jatropha", image: "/images/jatropha.png", color: "rose" },
     { id: 13, nameKey: "lepidium", image: "/images/lepidium.png", color: "green" },
     { id: 14, nameKey: "lupinus", image: "/images/lupinus.png", color: "blue" },
@@ -33,12 +33,12 @@ const PlantsGallery = () => {
     { id: 21, nameKey: "rosa", image: "/images/rosa.png", color: "rose" },
     { id: 22, nameKey: "rubus", image: "/images/rubus.png", color: "purple" },
     { id: 23, nameKey: "salvia", image: "/images/salvia.png", color: "blue" },
-    { id: 24, nameKey: "senecio", image: "/images/senecio.png", color: "yellow" },
+    { id: 24, nameKey: "senecio", image: "/images/Senecio.png", color: "yellow" },
     { id: 25, nameKey: "silene", image: "/images/silene.png", color: "rose" },
-    { id: 26, nameKey: "solidago", image: "/images/solidago.png", color: "yellow" },
+    { id: 26, nameKey: "solidago", image: "/images/Solidago.png", color: "yellow" },
     { id: 27, nameKey: "stachys", image: "/images/stachys.png", color: "purple" },
     { id: 28, nameKey: "stellaria", image: "/images/stellaria.png", color: "green" },
-    { id: 29, nameKey: "symphyotrichum", image: "/images/symphyotrichum.png", color: "purple" },
+    { id: 29, nameKey: "symphyotrichum", image: "/images/Symphyotrichum.png", color: "purple" },
     { id: 30, nameKey: "thalictrum", image: "/images/thalictrum.png", color: "rose" },
     { id: 31, nameKey: "trifolium", image: "/images/trifolium.png", color: "rose" },
     { id: 32, nameKey: "veronica", image: "/images/veronica.png", color: "blue" },
@@ -88,7 +88,7 @@ const PlantsGallery = () => {
   const colors = getColorClasses(currentPlant.color);
 
   return (
-    <section id="plants-gallery" className="h-screen relative overflow-hidden bg-gradient-to-b from-card/30 to-background flex flex-col">
+    <section id="plants-gallery" className="min-h-screen pb-8 relative overflow-hidden bg-gradient-to-b from-card/30 to-background flex flex-col">
       {/* Animated Background */}
       <div className="absolute inset-0">
         <div className={`absolute inset-0 bg-gradient-to-br ${colors.gradient} opacity-30 animate-pulse`}></div>
@@ -129,7 +129,9 @@ const PlantsGallery = () => {
                 <img 
                   src={currentPlant.image}
                   alt={t(`plantsGallery.plants.${currentPlant.nameKey}.name`)}
-                  className="max-w-full max-h-full object-contain transition-transform duration-500 hover:scale-105 drop-shadow-2xl"
+                  className={`max-w-full max-h-full object-contain transition-transform duration-500 hover:scale-105 drop-shadow-2xl ${
+                    currentPlant.nameKey === "chrysanthemum" ? "p-8 scale-75" : ""
+                  }`}
                 />
 
                 {/* Navigation Arrows */}
