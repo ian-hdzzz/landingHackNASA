@@ -10,39 +10,39 @@ const PlantsGallery = () => {
 
   // Lista de las 33 especies de plantas usando traducciones
   const plants = [
-    { id: 1, nameKey: "astragalus", image: "/images/astragalus.png", color: "purple" },
-    { id: 2, nameKey: "cardamine", image: "/images/cardamine.png", color: "rose" },
-    { id: 3, nameKey: "cerastium", image: "/images/cerastium.png", color: "green" },
+    { id: 1, nameKey: "astragalus", image: "/images/Astragalus.png", color: "purple" },
+    { id: 2, nameKey: "cardamine", image: "/images/Cardamine.png", color: "rose" },
+    { id: 3, nameKey: "cerastium", image: "/images/Cerastium.png", color: "green" },
     { id: 4, nameKey: "chrysanthemum", image: "/images/Chrysanthemum.png", color: "yellow" },
-    { id: 5, nameKey: "crotalaria", image: "/images/crotalaria.png", color: "green" },
-    { id: 6, nameKey: "delphinium", image: "/images/delphinium.png", color: "blue" },
-    { id: 7, nameKey: "draba", image: "/images/draba.png", color: "yellow" },
+    { id: 5, nameKey: "crotalaria", image: "/images/Crotalaria.png", color: "green" },
+    { id: 6, nameKey: "delphinium", image: "/images/Delphinium.png", color: "blue" },
+    { id: 7, nameKey: "draba", image: "/images/Draba.png", color: "yellow" },
     { id: 8, nameKey: "erigeron", image: "/images/Erigeron.png", color: "purple" },
-    { id: 9, nameKey: "euphorbia", image: "/images/euphorbia.png", color: "rose" },
+    { id: 9, nameKey: "euphorbia", image: "/images/Euphorbia.png", color: "rose" },
     { id: 10, nameKey: "helichrysum", image: "/images/Helichrysum.png", color: "orange" },
     { id: 11, nameKey: "hieracium", image: "/images/Hieracium.png", color: "orange" },
-    { id: 12, nameKey: "jatropha", image: "/images/jatropha.png", color: "rose" },
-    { id: 13, nameKey: "lepidium", image: "/images/lepidium.png", color: "green" },
-    { id: 14, nameKey: "lupinus", image: "/images/lupinus.png", color: "blue" },
-    { id: 15, nameKey: "penstemon", image: "/images/penstemon.png", color: "rose" },
-    { id: 16, nameKey: "plantago", image: "/images/plantago.png", color: "green" },
-    { id: 17, nameKey: "potentilla", image: "/images/potentilla.png", color: "yellow" },
-    { id: 18, nameKey: "prunusCherry", image: "/images/prunusCherry.png", color: "rose" },
-    { id: 19, nameKey: "prunusAlmond", image: "/images/prunusAlmond.png", color: "rose" },
-    { id: 20, nameKey: "ranunculus", image: "/images/ranunculus.png", color: "yellow" },
-    { id: 21, nameKey: "rosa", image: "/images/rosa.png", color: "rose" },
-    { id: 22, nameKey: "rubus", image: "/images/rubus.png", color: "purple" },
-    { id: 23, nameKey: "salvia", image: "/images/salvia.png", color: "blue" },
+    { id: 12, nameKey: "jatropha", image: "/images/Jatropha.png", color: "rose" },
+    { id: 13, nameKey: "lepidium", image: "/images/Lepidium.png", color: "green" },
+    { id: 14, nameKey: "lupinus", image: "/images/Lupinus.png", color: "blue" },
+    { id: 15, nameKey: "penstemon", image: "/images/Penstemon.png", color: "rose" },
+    { id: 16, nameKey: "plantago", image: "/images/Plantago.png", color: "green" },
+    { id: 17, nameKey: "potentilla", image: "/images/Potentilla.png", color: "yellow" },
+    { id: 18, nameKey: "prunusCherry", image: "/images/Prunus.png", color: "rose" },
+    { id: 19, nameKey: "prunusAlmond", image: "/images/Prunus2.png", color: "rose" },
+    { id: 20, nameKey: "ranunculus", image: "/images/Ranunculus.png", color: "yellow" },
+    { id: 21, nameKey: "rosa", image: "/images/Rosa.png", color: "rose" },
+    { id: 22, nameKey: "rubus", image: "/images/Rubus.png", color: "purple" },
+    { id: 23, nameKey: "salvia", image: "/images/Salvia.png", color: "blue" },
     { id: 24, nameKey: "senecio", image: "/images/Senecio.png", color: "yellow" },
-    { id: 25, nameKey: "silene", image: "/images/silene.png", color: "rose" },
+    { id: 25, nameKey: "silene", image: "/images/Silene.png", color: "rose" },
     { id: 26, nameKey: "solidago", image: "/images/Solidago.png", color: "yellow" },
-    { id: 27, nameKey: "stachys", image: "/images/stachys.png", color: "purple" },
-    { id: 28, nameKey: "stellaria", image: "/images/stellaria.png", color: "green" },
+    { id: 27, nameKey: "stachys", image: "/images/Stachys.png", color: "purple" },
+    { id: 28, nameKey: "stellaria", image: "/images/Stellaria.png", color: "green" },
     { id: 29, nameKey: "symphyotrichum", image: "/images/Symphyotrichum.png", color: "purple" },
-    { id: 30, nameKey: "thalictrum", image: "/images/thalictrum.png", color: "rose" },
-    { id: 31, nameKey: "trifolium", image: "/images/trifolium.png", color: "rose" },
-    { id: 32, nameKey: "veronica", image: "/images/veronica.png", color: "blue" },
-    { id: 33, nameKey: "vicia", image: "/images/vicia.png", color: "purple" }
+    { id: 30, nameKey: "thalictrum", image: "/images/Thalictrum.png", color: "rose" },
+    { id: 31, nameKey: "trifolium", image: "/images/Trifolium.png", color: "rose" },
+    { id: 32, nameKey: "veronica", image: "/images/Veronica.png", color: "blue" },
+    { id: 33, nameKey: "vicia", image: "/images/Vicia.png", color: "purple" }
   ];
 
   // Auto-play functionality
@@ -101,7 +101,7 @@ const PlantsGallery = () => {
             <LanguageToggle />
           </div>
         {/* Header */}
-        <div className="text-center max-w-4xl mx-auto py-2 md:py-6 pb-0 relative">
+        <div className="text-center max-w-4x  l mx-auto py-2 md:py-6 pb-0 relative">
           
           <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-primary/10 border border-primary/20 mb-3">
             <Leaf className="w-4 h-4 text-primary" />
