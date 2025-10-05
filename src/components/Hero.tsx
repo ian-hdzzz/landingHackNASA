@@ -9,11 +9,11 @@ const SplineAnimation = () => {
   const { t } = useTranslation();
   const navigate = useNavigate();
   return (
-    <section className="py-16 bg-gradient-to-b from-background">
+    <section className="py-8 lg:py-12 bg-gradient-to-b from-background">
       <div className="container mx-auto px-4 lg:px-8 xl:px-12">
         <div className="max-w-full mx-auto">
           {/* Language Toggle */}
-          <div className="flex justify-center md:justify-end mb-6">
+          <div className="flex justify-center md:justify-end mb-4">
             <LanguageToggle />
           </div>
           <div className="grid grid-cols-1 lg:grid-cols-12 xl:grid-cols-10 gap-8 items-center justify-center">
