@@ -37,7 +37,7 @@ const resources = {
             "monitoring": "Real-time monitoring of global flowering events",
             "prediction": "Flowering prediction by region using ML and NASA data",
             "reports": "Soil analysis and climate condition reports by region and plant type",
-            "data": "Actionable data for agriculture, conservation and public policies"
+            "data": "Actionable data for informed decision-making in multiple areas"
           }
         }
       },
@@ -50,9 +50,8 @@ const resources = {
           "description": "Resource optimization and increased productivity",
           "benefits": {
             "prediction": "Accurate flowering prediction by region",
-            "optimization": "Irrigation and fertilization optimization",
-            "management": "Strategic pollinator management",
-            "reduction": "Operational cost reduction up to 40%"
+            "optimization": "Irrigation and fertilization optimization by soil analysis",
+            "management": "ssss",
           }
         },
         "biodiversity": {
@@ -105,8 +104,8 @@ const resources = {
           "private": {
             "sector": "Private Sector",
             "title": "Strategic Planning",
-            "description": "Agricultural and food companies can plan exports, obtain sustainable certifications and improve logistics with accurate data.",
-            "stats": "Measurable ROI"
+            "description": "Agricultural and food companies can use our model to generate summaries and develop strategic plans for exports, sustainable certifications, and logistics improvement.",
+            "stats": "Operational Efficiency"
           },
           "government": {
             "sector": "Governments",
@@ -117,8 +116,8 @@ const resources = {
           "farmers": {
             "sector": "Farmers",
             "title": "Maximize Your Harvest",
-            "description": "Optimize irrigation, fertilization and hive movement to increase yield and reduce costs.",
-            "stats": "↑40% efficiency"
+            "description": "Optimize irrigation, fertilization, and hive management with constantly updated data to increase yield and reduce costs.",
+            "stats": "98.6% Anual data accuracy"
           }
         }
       },
@@ -489,8 +488,8 @@ const resources = {
           "private": {
             "sector": "Sector Privado",
             "title": "Planificación Estratégica",
-            "description": "Empresas agrícolas y alimentarias pueden planificar exportaciones, obtener certificaciones sostenibles y mejorar logística con datos precisos.",
-            "stats": "ROI medible"
+            "description": "Las empresas agrícolas y alimentarias pueden usar nuestro modelo para generar resúmenes y desarrollar planes estratégicos para exportaciones, certificaciones sostenibles y mejora logística.",
+            "stats": "Eficiencia Operativa"
           },
           "government": {
             "sector": "Gobiernos",
@@ -501,8 +500,8 @@ const resources = {
           "farmers": {
             "sector": "Agricultores",
             "title": "Maximiza tu Cosecha",
-            "description": "Optimiza riego, fertilización y movimiento de colmenas para aumentar rendimiento y reducir costos.",
-            "stats": "↑40% eficiencia"
+            "description": "Optimiza riego, fertilización y manejo de colmenas con datos constantemente actualizados para aumentar rendimiento y reducir costos.",
+            "stats": "98.6% de precisión en datos"
           }
         }
       },
