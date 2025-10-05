@@ -16,8 +16,7 @@ const Impact = () => {
       benefits: [
         t('impact.agriculture.benefits.prediction'),
         t('impact.agriculture.benefits.optimization'),
-        t('impact.agriculture.benefits.management'),
-        t('impact.agriculture.benefits.reduction')
+        t('impact.agriculture.benefits.management')
       ],
       color: "primary"
     },

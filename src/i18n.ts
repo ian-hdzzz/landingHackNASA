@@ -51,7 +51,7 @@ const resources = {
           "benefits": {
             "prediction": "Accurate flowering prediction by region",
             "optimization": "Irrigation and fertilization optimization by soil analysis",
-            "management": "ssss",
+            "management": "A model for sustainable resource management",
           }
         },
         "biodiversity": {
