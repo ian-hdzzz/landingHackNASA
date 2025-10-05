@@ -122,17 +122,22 @@ const PlantsGallery = () => {
         <div className="flex-1 -mt-4 lg:-mt-14 max-w-7xl mx-auto w-full">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 lg:gap-8 items-center h-full">
             
-            {/* Left Image - Optimized for PNG without container */}
+            {/* Left Image - Consistent sizing for all images */}
             <div className="relative flex justify-center lg:justify-start items-center min-h-0 flex-1 px-4 lg:px-6">
               <div className="relative w-full max-w-sm lg:max-w-md xl:max-w-lg aspect-[3/4] flex items-center justify-center">
-                {/* PNG Image without background container - Fixed dimensions */}
-                <img 
-                  src={currentPlant.image}
-                  alt={t(`plantsGallery.plants.${currentPlant.nameKey}.name`)}
-                  className={`max-w-full max-h-full object-contain transition-transform duration-500 hover:scale-105 drop-shadow-2xl ${
-                    currentPlant.nameKey === "chrysanthemum" ? "p-8 scale-75" : ""
-                  }`}
-                />
+                {/* Fixed container with consistent dimensions */}
+                <div className="w-full h-full flex items-center justify-center">
+                  <img 
+                    src={currentPlant.image}
+                    alt={t(`plantsGallery.plants.${currentPlant.nameKey}.name`)}
+                    className="w-full h-full object-contain transition-transform duration-500 hover:scale-105 drop-shadow-2xl"
+                    style={{ 
+                      maxWidth: '100%', 
+                      maxHeight: '100%',
+                      objectFit: 'contain'
+                    }}
+                  />
+                </div>
 
                 {/* Navigation Arrows */}
                 <button 

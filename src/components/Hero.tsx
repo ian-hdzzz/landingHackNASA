@@ -2,10 +2,12 @@ import Spline from '@splinetool/react-spline';
 import { Button } from "@/components/ui/button";
 import { ArrowRight, Satellite } from "lucide-react";
 import { useTranslation } from 'react-i18next';
+import { useNavigate } from 'react-router-dom';
 import LanguageToggle from './LanguageToggle';
 
 const SplineAnimation = () => {
   const { t } = useTranslation();
+  const navigate = useNavigate();
   return (
     <section className="py-16 bg-gradient-to-b from-background">
       <div className="container mx-auto px-4 lg:px-8 xl:px-12">
@@ -47,11 +49,21 @@ const SplineAnimation = () => {
 
               {/* CTA Buttons */}
               <div className="flex flex-col sm:flex-row gap-4 pt-6 animate-fade-in justify-center lg:justify-start">
-                <Button variant="hero" size="xl" className="group backdrop-blur-md bg-primary/95 hover:bg-primary shadow-2xl hover:shadow-[0_0_50px_hsl(142_76%_45%_/_0.5)] transition-all duration-300">
+                <Button 
+                  variant="hero" 
+                  size="xl" 
+                  className="group backdrop-blur-md bg-primary/95 hover:bg-primary shadow-2xl hover:shadow-[0_0_50px_hsl(142_76%_45%_/_0.5)] transition-all duration-300"
+                  onClick={() => window.open('http://localhost:3000/', '_blank')}
+                >
                   {t('hero.cta1')}
                   <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
                 </Button>
-                <Button variant="outline" size="xl" className="backdrop-blur-md bg-background/20 border-primary/40 hover:border-primary hover:bg-primary/15 shadow-xl transition-all duration-300">
+                <Button 
+                  variant="outline" 
+                  size="xl" 
+                  className="backdrop-blur-md bg-background/20 border-primary/40 hover:border-primary hover:bg-primary/15 shadow-xl transition-all duration-300"
+                  onClick={() => navigate('/species')}
+                >
                   {t('hero.cta2')}
                 </Button>
               </div>

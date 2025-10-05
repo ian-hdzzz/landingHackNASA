@@ -70,6 +70,7 @@ const resources = {
         "title": "How do we ",
         "titleHighlight": "do it?",
         "subtitle": "We combine the best of space observation with advanced artificial intelligence",
+        "exploreButton": "Explore Plant Species",
         "items": {
           "precise": {
             "title": "Precise Data",
@@ -453,6 +454,7 @@ const resources = {
         "title": "¿Cómo lo ",
         "titleHighlight": "hacemos?",
         "subtitle": "Combinamos lo mejor de la observación espacial con inteligencia artificial avanzada",
+        "exploreButton": "Explorar Especies de Plantas",
         "items": {
           "precise": {
             "title": "Datos Precisos",
@@ -509,7 +511,7 @@ const resources = {
         "titleHighlight": "decisiones estratégicas",
         "description": "La revolución del monitoreo de vegetación. Produce más, conserva mejor y responde antes a los cambios del planeta.",
         "button1": "Explorar BLOOMBLY",
-        "button2": "Saber Más"
+        "button2": "Conocer Más"
       },
       "footer": {
         "tagline": "Built with Machine Learning",

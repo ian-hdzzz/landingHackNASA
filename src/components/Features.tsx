@@ -1,9 +1,11 @@
-import { Satellite, Brain, BarChart3, MapPin, Clock, Shield } from "lucide-react";
+import { Satellite, Brain, BarChart3, MapPin, Clock, Shield, ArrowRight } from "lucide-react";
 import { useTranslation } from "react-i18next";
-import { Link } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
+import { Button } from "@/components/ui/button";
 
 const Features = () => {
   const { t } = useTranslation();
+  const navigate = useNavigate();
 
   const features = [
     {
@@ -70,17 +72,15 @@ const Features = () => {
 
         {/* Call to Action Button */}
         <div className="text-center mt-12 md:mt-16">
-          <Link 
-            to="/species"
-            className=" text-white group inline-flex items-center gap-3 px-8 py-4 bg-gradient-to-r from-primary  to-primary text-primary-foreground font-semibold rounded-xl hover:shadow-2xl hover:shadow-primary/25 transition-all duration-300 hover:scale-105"
+          <Button 
+            variant="hero" 
+            size="xl" 
+            className="group"
+            onClick={() => navigate('/species')}
           >
-            <span className="text-lg">Explorar Especies de Plantas</span>
-            <div className="w-6 h-6 rounded-full bg-white/20 flex items-center justify-center group-hover:translate-x-1 transition-transform">
-              <svg className="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
-              </svg>
-            </div>
-          </Link>
+            {t('features.exploreButton')}
+            <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
+          </Button>
         </div>
       </div>
     </section>
