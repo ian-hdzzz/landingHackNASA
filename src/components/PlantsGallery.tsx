@@ -10,25 +10,39 @@ const PlantsGallery = () => {
 
   // Lista de las 33 especies de plantas usando traducciones
   const plants = [
-    {
-      id: 1,
-      nameKey: "rosa",
-      image: "/images/rosa.png",
-      color: "rose"
-    },
-    {
-      id: 2,
-      nameKey: "lavanda",
-      image: "/images/lavanda.png",
-      color: "purple"
-    },
-    {
-      id: 3,
-      nameKey: "girasol",
-      image: "/images/girasol.png",
-      color: "yellow"
-    },
-    // Aqui agregas más plantas pao 
+    { id: 1, nameKey: "astragalus", image: "/images/astragalus.png", color: "purple" },
+    { id: 2, nameKey: "cardamine", image: "/images/cardamine.png", color: "rose" },
+    { id: 3, nameKey: "cerastium", image: "/images/cerastium.png", color: "green" },
+    { id: 4, nameKey: "chrysanthemum", image: "/images/chrysanthemum.png", color: "yellow" },
+    { id: 5, nameKey: "crotalaria", image: "/images/crotalaria.png", color: "green" },
+    { id: 6, nameKey: "delphinium", image: "/images/delphinium.png", color: "blue" },
+    { id: 7, nameKey: "draba", image: "/images/draba.png", color: "yellow" },
+    { id: 8, nameKey: "erigeron", image: "/images/erigeron.png", color: "purple" },
+    { id: 9, nameKey: "euphorbia", image: "/images/euphorbia.png", color: "rose" },
+    { id: 10, nameKey: "helichrysum", image: "/images/helichrysum.png", color: "orange" },
+    { id: 11, nameKey: "hieracium", image: "/images/hieracium.png", color: "orange" },
+    { id: 12, nameKey: "jatropha", image: "/images/jatropha.png", color: "rose" },
+    { id: 13, nameKey: "lepidium", image: "/images/lepidium.png", color: "green" },
+    { id: 14, nameKey: "lupinus", image: "/images/lupinus.png", color: "blue" },
+    { id: 15, nameKey: "penstemon", image: "/images/penstemon.png", color: "rose" },
+    { id: 16, nameKey: "plantago", image: "/images/plantago.png", color: "green" },
+    { id: 17, nameKey: "potentilla", image: "/images/potentilla.png", color: "yellow" },
+    { id: 18, nameKey: "prunusCherry", image: "/images/prunusCherry.png", color: "rose" },
+    { id: 19, nameKey: "prunusAlmond", image: "/images/prunusAlmond.png", color: "rose" },
+    { id: 20, nameKey: "ranunculus", image: "/images/ranunculus.png", color: "yellow" },
+    { id: 21, nameKey: "rosa", image: "/images/rosa.png", color: "rose" },
+    { id: 22, nameKey: "rubus", image: "/images/rubus.png", color: "purple" },
+    { id: 23, nameKey: "salvia", image: "/images/salvia.png", color: "blue" },
+    { id: 24, nameKey: "senecio", image: "/images/senecio.png", color: "yellow" },
+    { id: 25, nameKey: "silene", image: "/images/silene.png", color: "rose" },
+    { id: 26, nameKey: "solidago", image: "/images/solidago.png", color: "yellow" },
+    { id: 27, nameKey: "stachys", image: "/images/stachys.png", color: "purple" },
+    { id: 28, nameKey: "stellaria", image: "/images/stellaria.png", color: "green" },
+    { id: 29, nameKey: "symphyotrichum", image: "/images/symphyotrichum.png", color: "purple" },
+    { id: 30, nameKey: "thalictrum", image: "/images/thalictrum.png", color: "rose" },
+    { id: 31, nameKey: "trifolium", image: "/images/trifolium.png", color: "rose" },
+    { id: 32, nameKey: "veronica", image: "/images/veronica.png", color: "blue" },
+    { id: 33, nameKey: "vicia", image: "/images/vicia.png", color: "purple" }
   ];
 
   // Auto-play functionality
@@ -61,24 +75,12 @@ const PlantsGallery = () => {
 
   const getColorClasses = (color: string) => {
     const colorMap = {
-      rose: {
-        gradient: "from-rose-500/20 via-pink-500/20 to-red-500/20",
-        text: "text-rose-400",
-        border: "border-rose-500/30",
-        bg: "bg-rose-500/10"
-      },
-      purple: {
-        gradient: "from-purple-500/20 via-violet-500/20 to-indigo-500/20",
-        text: "text-purple-400",
-        border: "border-purple-500/30",
-        bg: "bg-purple-500/10"
-      },
-      yellow: {
-        gradient: "from-yellow-500/20 via-amber-500/20 to-orange-500/20",
-        text: "text-yellow-400",
-        border: "border-yellow-500/30",
-        bg: "bg-yellow-500/10"
-      }
+      rose: { gradient: "from-rose-500/20 via-pink-500/20 to-red-500/20", text: "text-rose-400", border: "border-rose-500/30", bg: "bg-rose-500/10" },
+      purple: { gradient: "from-purple-500/20 via-violet-500/20 to-indigo-500/20", text: "text-purple-400", border: "border-purple-500/30", bg: "bg-purple-500/10" },
+      yellow: { gradient: "from-yellow-500/20 via-amber-500/20 to-orange-500/20", text: "text-yellow-400", border: "border-yellow-500/30", bg: "bg-yellow-500/10" },
+      green: { gradient: "from-green-500/20 via-emerald-500/20 to-teal-500/20", text: "text-green-400", border: "border-green-500/30", bg: "bg-green-500/10" },
+      blue: { gradient: "from-blue-500/20 via-sky-500/20 to-cyan-500/20", text: "text-blue-400", border: "border-blue-500/30", bg: "bg-blue-500/10" },
+      orange: { gradient: "from-orange-500/20 via-amber-500/20 to-red-500/20", text: "text-orange-400", border: "border-orange-500/30", bg: "bg-orange-500/10" },
     };
     return colorMap[color as keyof typeof colorMap] || colorMap.rose;
   };
