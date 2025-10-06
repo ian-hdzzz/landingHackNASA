@@ -44,7 +44,7 @@ const CTA = () => {
               variant="hero" 
               size="xl" 
               className="group"
-              onClick={() => window.open('http://localhost:3000/', '_blank')}
+              onClick={() => window.open('https://bloombly.vercel.app/', '_blank')}
             >
               {t('cta.button1')}
               <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
