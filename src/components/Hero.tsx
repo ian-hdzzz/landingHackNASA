@@ -53,7 +53,7 @@ const SplineAnimation = () => {
                   variant="hero" 
                   size="xl" 
                   className="group backdrop-blur-md bg-primary/95 hover:bg-primary shadow-2xl hover:shadow-[0_0_50px_hsl(142_76%_45%_/_0.5)] transition-all duration-300"
-                  onClick={() => window.open('http://localhost:3000/', '_blank')}
+                    onClick={() => window.open('https://bloombly.vercel.app/', '_blank')}
                 >
                   {t('hero.cta1')}
                   <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
